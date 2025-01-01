@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Strava API Extension",
+    "version": "1.0",
+    "description": "Connect to Strava and get your training data.",
+    "permissions": [
+      "identity",
+      "https://www.strava.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "https://www.strava.com/*"
+    ]
+  }
